@@ -29,7 +29,6 @@ img {
     display: block;
 }
 
-
 /* =========================================================
    VARIABLES
 ========================================================= */
@@ -60,7 +59,6 @@ img {
         0 12px 35px rgba(6, 29, 51, 0.09);
 }
 
-
 /* =========================================================
    CONTENEDOR
 ========================================================= */
@@ -71,7 +69,6 @@ img {
     width: min(1180px, calc(100% - 40px));
     margin: 0 auto;
 }
-
 
 /* =========================================================
    NAVBAR
@@ -119,7 +116,6 @@ img {
 .nav-links a:hover {
     color: var(--gold-light);
 }
-
 
 /* =========================================================
    HERO
@@ -271,7 +267,6 @@ img {
     color: var(--gold-light);
 }
 
-
 /* =========================================================
    HERO VISUAL
 ========================================================= */
@@ -374,7 +369,6 @@ img {
     line-height: 1.5;
 }
 
-
 /* =========================================================
    SECCIONES
 ========================================================= */
@@ -406,7 +400,6 @@ img {
     line-height: 1.8;
 }
 
-
 /* =========================================================
    PERFIL
 ========================================================= */
@@ -422,7 +415,6 @@ img {
 
     font-size: 1rem;
 }
-
 
 /* =========================================================
    PILARES
@@ -550,7 +542,6 @@ img {
     font-size: 0.75rem;
 }
 
-
 /* =========================================================
    PROYECTOS
 ========================================================= */
@@ -562,7 +553,7 @@ img {
 .project-header {
     display: grid;
 
-    grid-template-columns: 1fr 330px;
+    grid-template-columns: 1fr;
 
     gap: 30px;
 
@@ -638,7 +629,6 @@ img {
     line-height: 1.5;
 }
 
-
 /* =========================================================
    DOS COLUMNAS
 ========================================================= */
@@ -697,7 +687,6 @@ img {
     color: var(--muted);
 }
 
-
 /* =========================================================
    SOLUTION FLOW
 ========================================================= */
@@ -751,7 +740,6 @@ img {
 
     font-weight: 800;
 }
-
 
 /* =========================================================
    ARQUITECTURA
@@ -859,7 +847,6 @@ img {
     border-color: rgba(217,154,69,0.45);
 }
 
-
 /* =========================================================
    CAPACIDADES
 ========================================================= */
@@ -907,7 +894,6 @@ img {
 
     font-size: 0.82rem;
 }
-
 
 /* =========================================================
    NOTA API
@@ -960,7 +946,6 @@ img {
 
     font-size: 0.9rem;
 }
-
 
 /* =========================================================
    VISUALES
@@ -1055,7 +1040,6 @@ img {
     color: #c6d5df;
 }
 
-
 /* =========================================================
    VALOR
 ========================================================= */
@@ -1112,7 +1096,6 @@ img {
     font-size: 0.88rem;
 }
 
-
 /* =========================================================
    EXPERIENCIA
 ========================================================= */
@@ -1161,7 +1144,6 @@ img {
     max-width: 750px;
 }
 
-
 /* =========================================================
    TECNOLOGÍAS
 ========================================================= */
@@ -1199,7 +1181,6 @@ img {
 
     font-size: 0.85rem;
 }
-
 
 /* =========================================================
    CONTACTO
@@ -1264,7 +1245,6 @@ img {
     color: var(--gold-light);
 }
 
-
 /* =========================================================
    FOOTER
 ========================================================= */
@@ -1280,7 +1260,6 @@ footer {
 
     font-size: 0.78rem;
 }
-
 
 /* =========================================================
    RESPONSIVE
@@ -1341,7 +1320,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
 
 @media (max-width: 650px) {
 
@@ -1418,7 +1396,6 @@ footer {
         0 10px 30px rgba(6, 29, 51, 0.08);
 }
 
-
 .evidence-image {
     width: 100%;
 
@@ -1426,7 +1403,6 @@ footer {
 
     padding: 25px;
 }
-
 
 .evidence-image img {
     width: 100%;
@@ -1441,22 +1417,9 @@ footer {
         0 5px 18px rgba(6, 29, 51, 0.12);
 }
 
-
 .evidence-content {
     padding: 28px 32px 32px;
 }
-
-
-.evidence-number {
-    color: var(--gold);
-
-    font-size: 0.75rem;
-
-    font-weight: 800;
-
-    letter-spacing: 2px;
-}
-
 
 .evidence-content h4 {
     margin-top: 7px;
@@ -1465,7 +1428,6 @@ footer {
 
     font-size: 1.45rem;
 }
-
 
 .evidence-content p {
     margin-top: 12px;
@@ -1476,7 +1438,6 @@ footer {
 
     line-height: 1.7;
 }
-
 
 .evidence-insight {
     margin-top: 18px !important;
@@ -1490,11 +1451,9 @@ footer {
     border-radius: 5px;
 }
 
-
 .evidence-insight strong {
     color: var(--navy);
 }
-
 
 /* =========================================================
    EVIDENCIA RESPONSIVE
@@ -1513,114 +1472,376 @@ footer {
 }
 
 /* =========================================================
-   EVIDENCIA VISUAL - PROYECTOS
+   NAV: BOTÓN CV
 ========================================================= */
 
-.evidence-card {
-    margin-top: 35px;
+.nav-links a.nav-cv {
+    padding: 7px 14px;
 
-    background: #ffffff;
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+
+    color: var(--gold-light);
+}
+
+.nav-links a.nav-cv:hover {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.nav-links {
+    align-items: center;
+}
+
+/* =========================================================
+   PERFIL: COMPETENCIAS
+========================================================= */
+
+.profile-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+
+    margin-top: 40px;
+}
+
+.profile-grid > div {
+    padding: 22px;
+
+    background: #f7f9fa;
 
     border: 1px solid var(--border);
+    border-top: 3px solid var(--gold);
 
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 10px 30px rgba(6, 29, 51, 0.08);
+    border-radius: 8px;
 }
 
+.profile-grid strong {
+    display: block;
 
-.evidence-image {
-    width: 100%;
+    color: var(--navy);
 
-    background: #eef2f5;
-
-    padding: 25px;
+    font-size: 1rem;
 }
 
+.profile-grid span {
+    display: block;
 
-.evidence-image img {
-    width: 100%;
+    margin-top: 6px;
 
-    max-width: 1100px;
+    color: var(--muted);
 
-    margin: 0 auto;
+    font-size: 0.88rem;
+}
 
+/* =========================================================
+   MODELO DE TRABAJO
+========================================================= */
+
+.method-section {
+    background: var(--navy-2);
+}
+
+.method-section h2 {
+    color: white;
+}
+
+.method-flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 10px 8px;
+
+    margin-top: 35px;
+}
+
+.method-flow span {
+    padding: 10px 15px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    border: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: 6px;
 
-    box-shadow:
-        0 5px 18px rgba(6, 29, 51, 0.12);
+    color: #e4edf3;
+
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
+.method-flow span:not(:last-child)::after {
+    content: "→";
 
-.evidence-content {
-    padding: 28px 32px 32px;
+    margin-left: 14px;
+
+    color: var(--gold-light);
+
+    font-weight: 700;
 }
 
+.method-flow span:last-child {
+    border-color: var(--gold);
 
-.evidence-number {
+    color: var(--gold-light);
+}
+
+.section.method-section .method-quote {
+    margin-top: 32px;
+
+    color: var(--gold-light);
+
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* =========================================================
+   CAPACIDADES CON ICONOS
+========================================================= */
+
+.capability {
+    display: grid;
+
+    grid-template-columns: 44px 1fr;
+
+    column-gap: 14px;
+
+    align-items: center;
+}
+
+.cap-icon {
+    grid-row: 1 / span 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    background: rgba(217, 154, 69, 0.14);
+
+    border-radius: 10px;
+
+    color: #bd7c2b;
+}
+
+.cap-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* =========================================================
+   RETOS DEL PROYECTO
+========================================================= */
+
+.project-challenges {
+    margin-top: 45px;
+}
+
+.project-challenges h3 {
+    margin-top: 10px;
+
+    color: var(--navy);
+
+    font-size: 1.35rem;
+}
+
+.challenge-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 14px;
+
+    margin-top: 22px;
+}
+
+.challenge {
+    padding: 20px;
+
+    background: #fff8ed;
+
+    border-left: 4px solid var(--gold);
+
+    border-radius: 6px;
+}
+
+.challenge strong {
+    color: var(--navy);
+}
+
+.challenge p {
+    margin-top: 6px;
+
+    font-size: 0.86rem;
+}
+
+.value-lead {
+    margin-top: 14px;
+
+    color: var(--navy) !important;
+
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+/* =========================================================
+   CASOS DE NEGOCIO
+========================================================= */
+
+.cases-section {
+    background: var(--light-2);
+}
+
+.cases-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin-top: 45px;
+}
+
+.case-card {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+}
+
+.case-kicker {
     color: var(--gold);
 
-    font-size: 0.75rem;
-
+    font-size: 0.72rem;
     font-weight: 800;
 
     letter-spacing: 2px;
 }
 
-
-.evidence-content h4 {
-    margin-top: 7px;
+.case-card h3 {
+    margin-top: 8px;
 
     color: var(--navy);
 
-    font-size: 1.45rem;
+    font-size: 1.3rem;
 }
 
-
-.evidence-content p {
+.case-card p {
     margin-top: 12px;
 
-    max-width: 950px;
-
-    font-size: 0.95rem;
-
-    line-height: 1.7;
+    font-size: 0.92rem;
 }
 
+.section .case-card .case-flow {
+    padding-top: 12px;
 
-.evidence-insight {
-    margin-top: 18px !important;
+    border-top: 1px solid var(--border);
 
-    padding: 17px 20px;
+    color: var(--navy);
 
-    background: #f7f9fa;
-
-    border-left: 3px solid var(--gold);
-
-    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
+.case-metrics {
+    display: flex;
+    flex-wrap: wrap;
 
-.evidence-insight strong {
+    gap: 18px;
+
+    margin-top: 20px;
+}
+
+.case-metrics strong {
+    display: block;
+
+    color: var(--navy);
+
+    font-size: 1.9rem;
+    line-height: 1;
+}
+
+.case-metrics span {
+    display: block;
+
+    max-width: 110px;
+
+    margin-top: 4px;
+
+    color: var(--muted);
+
+    font-size: 0.72rem;
+}
+
+/* =========================================================
+   CONTACTO: WHATSAPP Y CV
+========================================================= */
+
+.contact-links {
+    flex-wrap: wrap;
+}
+
+.contact-links a.contact-whatsapp {
+    background: #25d366;
+
+    border-color: #25d366;
+
+    color: #04331a;
+}
+
+.contact-links a.contact-whatsapp:hover {
+    background: #4be08a;
+
+    border-color: #4be08a;
+
+    color: #04331a;
+}
+
+.contact-links a.contact-cv {
+    background: var(--gold);
+
+    border-color: var(--gold);
+
     color: var(--navy);
 }
 
+.contact-links a.contact-cv:hover {
+    background: var(--gold-light);
+
+    border-color: var(--gold-light);
+
+    color: var(--navy);
+}
 
 /* =========================================================
-   EVIDENCIA RESPONSIVE
+   RESPONSIVE (NUEVOS BLOQUES)
 ========================================================= */
+
+@media (max-width: 950px) {
+
+    .profile-grid,
+    .cases-grid,
+    .challenge-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
 
 @media (max-width: 650px) {
 
-    .evidence-image {
-        padding: 12px;
+    .method-flow span:not(:last-child)::after {
+        margin-left: 10px;
     }
 
-    .evidence-content {
-        padding: 22px;
+    .case-card {
+        padding: 24px;
     }
 
 }
